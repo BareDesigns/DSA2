@@ -1,4 +1,1 @@
-# NOTES
-
-
-# Identify algorithm used to create program and meet all needs in scenario
+# Jonathan Nguyen; #000918228
