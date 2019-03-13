@@ -1,0 +1,160 @@
+{
+    "locations": {
+        "International Peace Gardens": [
+            {
+                "Address": "1060 Dalton Ave S",
+                "hub_distance": 7.2
+            }
+        ],
+        "Sugar House Park": [
+            {
+                "Address": "1330 2100 S",
+                "hub_distance": 3.8
+            }
+        ],
+        "Taylorsville-Bennion Heritage City Gov Off": [
+            {
+                "Address": "1488 4800 S",
+                "hub_distance": 11.0
+            }
+        ],
+        "Salt Lake City Division of Health Services ": [
+            {
+                "Address": "177 W Price Ave",
+                "hub_distance": 2.2
+            }
+        ],
+        "South Salt Lake Public Works": [
+            {
+                "Address": "195 W Oakland Ave",
+                "hub_distance": 3.5
+            }
+        ],
+        "Salt Lake City Streets and Sanitation": [
+            {
+                "Address": "2010 W 500 S",
+                "hub_distance": 10.9
+            }
+        ],
+        "Deker Lake": [
+            {
+                "Address": "2300 Parkway Blvd",
+                "hub_distance": 8.6
+            }
+        ],
+        "Salt Lake City Ottinger Hall": [
+            {
+                "Address": "233 Canyon Rd",
+                "hub_distance": 7.6
+            }
+        ],
+        "Columbus Library": [
+            {
+                "Address": "2530 S 500 E",
+                "hub_distance": 2.8
+            }
+        ],
+        "Taylorsville City Hall": [
+            {
+                "Address": "2600 Taylorsville Blvd",
+                "hub_distance": 6.4
+            }
+        ],
+        "South Salt Lake Police": [
+            {
+                "Address": "2835 Main St",
+                "hub_distance": 3.2
+            }
+        ],
+        "Council Hall": [
+            {
+                "Address": "300 State St",
+                "hub_distance": 7.6
+            }
+        ],
+        "Redwood Park": [
+            {
+                "Address": "3060 Lester St",
+                "hub_distance": 5.2
+            }
+        ],
+        "Salt Lake County Mental Health": [
+            {
+                "Address": "3148 S 1100 W",
+                "hub_distance": 4.4
+            }
+        ],
+        "Salt Lake County/United Police Dept": [
+            {
+                "Address": "3365 S 900 W",
+                "hub_distance": 3.7
+            }
+        ],
+        "West Valley Prosecutor": [
+            {
+                "Address": "3575 W Valley Central Sta bus Loop",
+                "hub_distance": 7.6
+            }
+        ],
+        "Housing Auth. of Salt Lake County": [
+            {
+                "Address": "3595 Main St",
+                "hub_distance": 2.0
+            }
+        ],
+        "Utah DMV Administrative Office": [
+            {
+                "Address": "380 W 2880 S",
+                "hub_distance": 3.6
+            }
+        ],
+        "Third District Juvenile Court": [
+            {
+                "Address": "410 S State St",
+                "hub_distance": 6.5
+            }
+        ],
+        "Cottonwood Regional Softball Complex": [
+            {
+                "Address": "4300 S 1300 E",
+                "hub_distance": 1.9
+            }
+        ],
+        "Holiday City Office": [
+            {
+                "Address": "4580 S 2300 E",
+                "hub_distance": 3.4
+            }
+        ],
+        "Murray City Museum": [
+            {
+                "Address": "5025 State St",
+                "hub_distance": 2.4
+            }
+        ],
+        "Valley Regional Softball Complex": [
+            {
+                "Address": "5100 South 2700 West",
+                "hub_distance": 6.4
+            }
+        ],
+        "City Center of Rock Springs": [
+            {
+                "Address": "5383 South 900 East #104",
+                "hub_distance": 2.4
+            }
+        ],
+        "Rice Terrace Pavilion Park": [
+            {
+                "Address": "600 E 900 South",
+                "hub_distance": 5.0
+            }
+        ],
+        "Wheeler Historic Farm ": [
+            {
+                "Address": "6351 South 900 East",
+                "hub_distance": 3.6
+            }
+        ]
+    }
+}
