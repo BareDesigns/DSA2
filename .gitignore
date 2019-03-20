@@ -1,3 +1,5 @@
 *.png
 *.xlsx
 .vscode/
+junk.py
+__pycache__/
