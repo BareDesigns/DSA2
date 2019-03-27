@@ -1,90 +1,35 @@
-import json
-from string import ascii_lowercase
+nodes = ('hub', 'a', 'b', 'c', 'd', 'e', 'f',
+         'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+         'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+         'w', 'x', 'y', 'z')
 
-
-class Vertex:
-    def __init__(self, label):
-        self.label = label
-
-
-class Graph:
-    # This class is for setting up graphs and edges
-
-    def __init__(self):
-        # INIT function
-        self.adjacency_list = {}
-        self.edge_weights = {}
-
-    def add_vertex(self, new_vertex):
-        # Function to add a vertex
-        self.adjacency_list[new_vertex] = []
-
-    def edge_data(self, vertex_1, vertex_2, weight=1.0):
-        self.edge_weights[(vertex_1, vertex_2)] = weight
-        self.adjacency_list[vertex_1].append(vertex_2)
-
-    def add_edge(self, vertex_1, vertex_2, weight=1.0):
-        self.edge_data(vertex_1, vertex_2, weight)
-        self.edge_data(vertex_2, vertex_1, weight)
-
-    # Set empty lists/dict for later use in the code
-location_names = []
-vertex_names = []
-location_dict = {}
-
-# Open the JSON file and use the names as variables
-with open('Distance_Table.json') as data_file:
-    places = json.load(data_file)
-    for b in places['locations']:
-        location_names.append(b)
-
-# Make a dictionary that holds all the vertex names and keys for looping
-for letter in ascii_lowercase:
-    vertex_names.append('vertex_' + letter)
-
-# Set the location_dict to hold all the vertex names and locations names from JSON
-location_dict = dict(zip((vertex_names), (location_names)))
-
-# Set graph variable
-g = Graph()
-
-# Assign the graph variables to the location names
-# First part will assign the key names to the Vertex names
-# Second part makes a variable to add to vertex class
-for k, v in location_dict.items():
-    globals()[k] = Vertex(v)
-    foo = globals()[k]
-    g.add_vertex(foo)
-
-vertex_hub = Vertex("WGU")
-g.add_vertex(vertex_hub)
-
-# Make graph edges
-g.add_edge(vertex_hub, vertex_t, 1.2)
-g.add_edge(vertex_hub, vertex_v, 2.4)
-g.add_edge(vertex_hub, vertex_q, 2.0)
-g.add_edge(vertex_t, vertex_u, 2.0)
-g.add_edge(vertex_v, vertex_x, 1.7)
-g.add_edge(vertex_v, vertex_c, 6.1)
-g.add_edge(vertex_x, vertex_z, 1.3)
-g.add_edge(vertex_c, vertex_w, 9.7)
-g.add_edge(vertex_w, vertex_p, 7.5)
-g.add_edge(vertex_w, vertex_j, 0.4)
-g.add_edge(vertex_q, vertex_d, 0.5)
-g.add_edge(vertex_d, vertex_r, 1.7)
-g.add_edge(vertex_d, vertex_k, 1.5)
-g.add_edge(vertex_k, vertex_n, 2.6)
-g.add_edge(vertex_n, vertex_r, 2.2)
-g.add_edge(vertex_n, vertex_m, 1.3)
-g.add_edge(vertex_m, vertex_g, 1.6)
-g.add_edge(vertex_r, vertex_o, 2.2)
-g.add_edge(vertex_r, vertex_e, 1.1)
-g.add_edge(vertex_o, vertex_i, 4.0)
-g.add_edge(vertex_i, vertex_e, 1.5)
-g.add_edge(vertex_i, vertex_b, 6.3)
-g.add_edge(vertex_e, vertex_s, 3.5)
-g.add_edge(vertex_e, vertex_a, 3.5)
-g.add_edge(vertex_a, vertex_f, 10.9)
-g.add_edge(vertex_s, vertex_y, 1.8)
-g.add_edge(vertex_s, vertex_l, 1.0)
-g.add_edge(vertex_l, vertex_h, 7.7)
+distances = {
+    'hub': {'a': 7.2, 'b': 3.8, 'c': 11.0, 'd': 2.2, 't': 1.2, 'v': 2.4, 'q': 2.0},
+    'a': {'b': 3.8, 'c': 11.0, 'k': 5.3, 'o': 4.5, 'i': 6.3, 'g': 2.8, 's': 4.8, 'f': 1.6},
+    'b': {'a': 7.1, 'q': 4.1, 'i': 1.6, 'y': 2.8, 'j': 10.4, 'p': 5.7, 'n': 5.6, 'z': 7.4},
+    'c': {'w': 9.7},
+    'd': {'r': 1.7, 'k': 1.5},
+    'e': {'s': 3.5, 'a': 3.5},
+    'f': {'a': 1.6, 'b': 8.6, 'c': 8.6, 'l': 5.3, 'x': 6.1, 's': 4.3, 'r': 3.6},
+    'g': {'a': 2.8, 'b': 6.3, 'c': 4.0},
+    'h': {'a': 4.8, 'b': 5.3, 'c': 11.1, 'x': 9.5},
+    'i': {'e': 1.5, 'b': 6.3, 'y': 3.2, 'j': 9.4, 'p': 6.7, 'n': 3.7, 'c': 7.3,
+          'o': 4.0, 'g': 9.3},
+    'j': {'a': 7.3, 'b': 10.4, 'c': 1.0, 'p': 8.1, 'n': 5.2, 'z': 6.8},
+    'k': {'n': 2.6, 'o': 2.9, 'i': 1.1, 'g': 4.8},
+    'l': {'h': 7.7, 'x': 9.5},
+    'm': {'g': 1.6, 'f': 4.2, 'l': 7.3, 'o': 1.5},
+    'n': {'r': 2.2, 'm': 1.3, 'p': 6.4, 'z': 8.8},
+    'o': {'i': 4.0, 'f': 5.8, 'x': 5.9, 's': 6.4, 'l': 6.6, 'g': 3.4},
+    'p': {'a': 7.4, 'b': 5.7, 'c': 7.2, 'z': 13.6, 'l': 7.2},
+    'q': {'a': 6.0, 'b': 4.1, 'd': 0.5, 'm': 3.2, 'z': 5.2, 't': 3.0},
+    'r': {'o': 2.2, 'e': 1.1, 'x': 5.6, 'l': 5.4, 's': 4.4},
+    's': {'y': 1.8, 'l': 1.0, 'k': 3.7, 'o': 6.4, 'i': 4.1, 'g': 6.7},
+    't': {'b': 3.3, 'u': 2.0},
+    'u': {'a': 10.9, 'b': 5.0, 'c': 7.4},
+    'v': {'x': 1.7, 'c': 6.1},
+    'w': {'p': 7.5, 'j': 0.4},
+    'x': {'z': 1.3, 'a': 10.0, 'b': 6.1, 'c': 6.4, 'h': 9.5},
+    'y': {'a': 4.4, 'b': 2.8, 'c': 10.1},
+    'z': {'a': 13.0, 'b': 7.4, 'c': 10.1}
+}

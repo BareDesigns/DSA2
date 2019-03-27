@@ -6,9 +6,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84115,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 21,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "b"
         },
         {
             "Package_ID": 2,
@@ -16,9 +18,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84106,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 44,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "i"
         },
         {
             "Package_ID": 3,
@@ -26,9 +30,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84103,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "h"
         },
         {
             "Package_ID": 4,
@@ -36,9 +42,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84115,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 4,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "r"
         },
         {
             "Package_ID": 5,
@@ -46,9 +54,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84111,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 5,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "s"
         },
         {
             "Package_ID": 6,
@@ -56,9 +66,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84111,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 5,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "m"
         },
         {
             "Package_ID": 7,
@@ -66,9 +78,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84106,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 88,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "b"
         },
         {
             "Package_ID": 8,
@@ -76,9 +90,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84103,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 9,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "l"
         },
         {
             "Package_ID": 9,
@@ -86,9 +102,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84103,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "l"
         },
         {
             "Package_ID": 10,
@@ -96,9 +114,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84105,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 1,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "y"
         },
         {
             "Package_ID": 11,
@@ -106,9 +126,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84118,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 1,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "j"
         },
         {
             "Package_ID": 12,
@@ -116,9 +138,11 @@
             "City": "West Valley City",
             "State": "UT",
             "Zip": 84119,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 1,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "p"
         },
         {
             "Package_ID": 13,
@@ -126,9 +150,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84104,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "f"
         },
         {
             "Package_ID": 14,
@@ -136,9 +162,11 @@
             "City": "Millcreek",
             "State": "UT",
             "Zip": 84117,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 88,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "t"
         },
         {
             "Package_ID": 15,
@@ -146,9 +174,11 @@
             "City": "Holladay",
             "State": "UT",
             "Zip": 84117,
-            "Deadline Delivery": "9:00 AM",
+            "Delivery Deadline": "9:00 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 4,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "u"
         },
         {
             "Package_ID": 16,
@@ -156,9 +186,11 @@
             "City": "Holladay",
             "State": "UT",
             "Zip": 84117,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 88,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "u"
         },
         {
             "Package_ID": 17,
@@ -166,9 +198,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84119,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "n"
         },
         {
             "Package_ID": 18,
@@ -176,9 +210,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84123,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 6,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "c"
         },
         {
             "Package_ID": 19,
@@ -186,9 +222,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84115,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 37,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "d"
         },
         {
             "Package_ID": 20,
@@ -196,9 +234,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84115,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 37,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "q"
         },
         {
             "Package_ID": 21,
@@ -206,9 +246,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84115,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 3,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "q"
         },
         {
             "Package_ID": 22,
@@ -216,9 +258,11 @@
             "City": "Murray",
             "State": "UT",
             "Zip": 84121,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "z"
         },
         {
             "Package_ID": 23,
@@ -226,9 +270,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84118,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 5,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "w"
         },
         {
             "Package_ID": 24,
@@ -236,9 +282,11 @@
             "City": "Murray",
             "State": "UT",
             "Zip": 84107,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 7,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "v"
         },
         {
             "Package_ID": 25,
@@ -246,9 +294,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84117,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 7,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "x"
         },
         {
             "Package_ID": 26,
@@ -256,9 +306,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84117,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 25,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "x"
         },
         {
             "Package_ID": 27,
@@ -266,9 +318,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84104,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 5,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "a"
         },
         {
             "Package_ID": 28,
@@ -276,9 +330,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84115,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 7,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "k"
         },
         {
             "Package_ID": 29,
@@ -286,9 +342,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84106,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "b"
         },
         {
             "Package_ID": 30,
@@ -296,9 +354,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84103,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 1,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "l"
         },
         {
             "Package_ID": 31,
@@ -306,9 +366,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84119,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 1,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "o"
         },
         {
             "Package_ID": 32,
@@ -316,9 +378,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84119,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 1,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "o"
         },
         {
             "Package_ID": 33,
@@ -326,9 +390,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84106,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 1,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "i"
         },
         {
             "Package_ID": 34,
@@ -336,9 +402,11 @@
             "City": "Holladay",
             "State": "UT",
             "Zip": 84117,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "u"
         },
         {
             "Package_ID": 35,
@@ -346,9 +414,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84104,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 88,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "a"
         },
         {
             "Package_ID": 36,
@@ -356,9 +426,11 @@
             "City": "West Valley City",
             "State": "UT",
             "Zip": 84119,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 88,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "g"
         },
         {
             "Package_ID": 37,
@@ -366,9 +438,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84111,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 2,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "s"
         },
         {
             "Package_ID": 38,
@@ -376,9 +450,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84111,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 9,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "s"
         },
         {
             "Package_ID": 39,
@@ -386,9 +462,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84104,
-            "Deadline Delivery": "5:00 PM",
+            "Delivery Deadline": "5:00 PM",
+            "Delivery Time": "17:00:00",
             "Weight": 9,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "f"
         },
         {
             "Package_ID": 40,
@@ -396,9 +474,11 @@
             "City": "Salt Lake City",
             "State": "UT",
             "Zip": 84115,
-            "Deadline Delivery": "10:30 AM",
+            "Delivery Deadline": "10:30 AM",
+            "Delivery Time": "17:00:00",
             "Weight": 45,
-            "Delivery Status": ""
+            "Delivery Status": "",
+            "Delivery Node": "r"
         }
     ]
 }
