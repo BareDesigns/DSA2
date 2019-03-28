@@ -1,16 +1,23 @@
+# Jonathan Nguyen; #000918228
+
 import json
 
 
 class Packages:
-    '''The package class handles the add, remove, and 
-    search functions for the hash table'''
+    ''' In this Packages class we are adding functions to setup the hashtable. The functions
+    that I am including is init, to initialize our hash table. The next is the add() function, which
+    will require the user to pass a package element, and use a hash key to add it to our table. The search()
+    function will hash the passed variable and see if it exists in our hash table. If it does not, it will simply return none.
+    Finally, the remove() function will first search for the hash key, and if it exists, remove the package from the table.'''
 
-    # __init__ will initialize the hashtable/dictionary
+    # The first function is the __init__ one, which passes only self.
+    # This function will be used to setup the dictionary for our hash table.
     def __init__(self):
         self.table = {}
 
-    # the add function takes the hash of th package ID and adds it to
-    # the table
+    # The add function passes a package from our JSON table and matches the hash with the
+    # Package_ID. After that, it will append the package to our hash table according to the hash key.
+    # For scalability, as long as each package ID is unique this should be able to scale indefinitely.
     def add(self, package):
         key = hash(package['Package_ID'])
         self.table[package['Package_ID']] = package

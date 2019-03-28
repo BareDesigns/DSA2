@@ -1,3 +1,4 @@
+# Jonathan Nguyen; #000918228
 from HashTable import *
 
 # Initialize our trucks for use
