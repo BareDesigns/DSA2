@@ -1,39 +1,85 @@
 # Jonathan Nguyen; #000918228
 
-from Graph import *
-from HashTable import *
-from Trucks import *
-from Algorithm import *
+'''main.py: This program's purpose is to provide the user an option to look up package
+details on an individual basis, or on a whole at any given time throughout the day.'''
 
-# set the variable a to the dj_algorithm class
-a = dj_algorithm()
+from Delivery import *
 
-# run the trucks through the functions
-a.truck_one(priority_truck)
-a.truck_two(truck_2)
-a.truck_three(truck_3)
 
-# The while loop will show the package statuses until a key interrupt is input
+# TODO: Add total time sent
+
+# The while loop will as a series of questions which require input from the user.
+# Depending on what they choose, the program will navigate them on the preset
+# path to give the user what information they were searching for.
 while True:
-    # Any key input will run the loop again
-    paused = input('')
 
-    # Print the current time at the top of the loop
-    print(f'CURRENT TIME: {start_time.time()}')
+    question = input(
+        '\nIs there a specific package number you want to see the details of? Y/N \n')
 
-    # This for loop will run through the lists and also compare times in order to show statuses
-    for i in range(40):
-        # set variables
-        id = data['Packages'][i]['Package_ID']
-        status = data['Packages'][i]['Delivery Status']
-        deliv_time = data['Packages'][i]['Delivery Time']
+    # Here we ask if the user is looking for information on a sole package.
+    # If so, we use the hash table search function built in Hashtable.py.
+    # The big O complexity for this is (O(1)).
+    if question.upper() == 'Y':
+        package_number = int(input('\nWhat is the package number?\n'))
+        package_information = p.search(package_number)
+        print(f'\nPackage #{package_number}:\n{package_information}')
 
-        # if the start time is greater then the delivery time, the package is delivered
-        if str(start_time.time()) > str(data['Packages'][i]['Delivery Time']):
-            print(f'Package {id} - Delivered at {deliv_time}')
+    # If the user wants to see the status of all the packages, they are able
+    # to pick the time (24 hour format) and it will return where the packages
+    # are at that given time.
+    else:
+        total_list = input(
+            '\nDo you want to see the status of all the packages? Y/N\n')
 
+        # The big O complexity for this loop is (O(1)).
+        if total_list.upper() == 'Y':
+            time_question = input(
+                '\nFor what time do you want to see their status? (13:00:00)\n')
+
+            # This for loop sets variables for our package information in order to
+            # make the print statement cleaner. It will loop up the ID and time
+            # and return that information to the user.
+            # The big O complexity for this loop is (O(N)).
+            for i in range(1, len(p.table)+1):
+                package_id = p.table[i]['Package_ID']
+                status = p.search(i)
+                final_status = status['Delivery Status']
+                delivery_time = status['Delivery Time']
+                # If the time inputted is greater than the delivered time, this
+                # means that the package has already been delivered. If that
+                # happens we simply return the delivery time for those packages.
+                # The big O complexity for this loop is (O(1)).
+                if str(time_question) > str(delivery_time):
+                    print(
+                        f'Package {package_id} was delivered at {delivery_time}')
+                else:
+                    print(f'Package {package_id} status is {final_status}')
+
+        # Should the user only want to see the mileage for the trucks, we ask that question
         else:
-            print(f'Package {id} - waiting to be delivered')
+            miles_answer = input(
+                '\nWould you like to see the total distances of the trucks at the end of they day?\n')
 
-    # add 5 minutes per enter in order to check the package statuses
-    start_time += datetime.timedelta(minutes=5)
+            # if the user answers Y, we pull the total distance information from Delivery.py
+            # and give that end information to the user.
+            # The big O complexity for this is (O(1)):
+            if miles_answer.upper() == 'Y':
+
+                # In order to get a better view of all the trucks distances, we make
+                # a total_overall_distance variable to show the sum of the three trucks
+                total_overall_distance = d.total_distance_1 + \
+                    d.total_distance_2 + d.total_distance_3
+
+                # Here we print the mileage information for the user
+                print(
+                    f'''\nThe total miles for truck 1: {d.total_distance_1} miles
+                    truck 2: {d.total_distance_2} miles
+                    truck 3: {d.total_distance_3} miles
+                    All trucks: {total_overall_distance} miles''')
+
+            # If the user wants none of these things, we print goodbye and break the loop
+            else:
+                print('Goodbye!\n')
+                break
+
+# Once the user selects no for everything, the program simply prints goodbye and exits.
