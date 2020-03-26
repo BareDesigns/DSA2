@@ -1,7 +1,7 @@
 # Jonathan Nguyen; #000918228
 
-'''Algorithm.py: This .py file's purpose is to run our truck/package data through 
-dijkstra's algorithm.'''
+"""Algorithm.py: This .py file's purpose is to run our truck/package data through 
+dijkstra's algorithm."""
 
 import json
 from Trucks import *
@@ -9,11 +9,11 @@ from Graph import *
 
 
 class dj_algorithm:
-    '''The purpose of this class is to hold three functions, one for each truck. In the __init__
+    """The purpose of this class is to hold three functions, one for each truck. In the __init__
     function, we establish all of the necessary variables needed for each function. As for scalability,
     each function can simply be copied, with only a few variable names being changed. Although, because
     the complexity is (O(n^2)), it might cause some slowdowns should it get too large, it should 
-    theoretically be able to expand or shrink to any size without issue.'''
+    theoretically be able to expand or shrink to any size without issue."""
 
     # In this function we set 3 variables for the following functions. The touched dictionary will be the
     # nodes visited. The untouched dictionary will be the yet to be visited nodes. The current node
@@ -27,9 +27,9 @@ class dj_algorithm:
         self.untouched = {}
         self.untouched_2 = {}
         self.untouched_3 = {}
-        self.current_node = 'hub'
-        self.current_node_2 = 'hub'
-        self.current_node_3 = 'hub'
+        self.current_node = "hub"
+        self.current_node_2 = "hub"
+        self.current_node_3 = "hub"
         self.current_distance = 0
         self.current_distance_2 = 0
         self.current_distance_3 = 0
@@ -48,9 +48,9 @@ class dj_algorithm:
         # the untouched dictionary.
         # The big O complexity for this for loop is (O(N)).
         for i in range(len(master_list)):
-            delivery_node = master_list[i]['Delivery Node']
+            delivery_node = master_list[i]["Delivery Node"]
             self.untouched[delivery_node] = None
-            self.untouched['hub'] = 0
+            self.untouched["hub"] = 0
 
         # This while loop is the dijkstra algorithm. It will keep running until all of the items
         # from our untouched dictionary are moved into the touched dictionary.
@@ -70,13 +70,17 @@ class dj_algorithm:
                 new_distance = self.current_distance + dist
 
                 # The big O complexity for this if loop is (O(1)).
-                if self.untouched[neighbor] is None or self.untouched[neighbor] > new_distance:
+                if (
+                    self.untouched[neighbor] is None
+                    or self.untouched[neighbor] > new_distance
+                ):
                     self.untouched[neighbor] = new_distance
 
             # Here we sort the items with our key being lambda x, in order to ensure
             # that the lowest distance is put at the front of the list.
             sorted_nodes = sorted(
-                distances[self.current_node].items(), key=lambda x: x[1])
+                distances[self.current_node].items(), key=lambda x: x[1]
+            )
 
             # Here we set the current node to the current distance.
             # Once it has made it into the touched dictionary, we can then remove
@@ -104,9 +108,9 @@ class dj_algorithm:
     # the variable names. Complexities and other such things are identical.
     def truck_two(self, list_2):
         for i in range(len(list_2)):
-            delivery_node_2 = list_2[i]['Delivery Node']
+            delivery_node_2 = list_2[i]["Delivery Node"]
             self.untouched_2[delivery_node_2] = None
-            self.untouched_2['hub'] = 0
+            self.untouched_2["hub"] = 0
 
         while len(self.untouched_2) > 0:
             for neighbor, dist in distances[self.current_node_2].items():
@@ -115,11 +119,15 @@ class dj_algorithm:
 
                 new_distance = self.current_distance_2 + dist
 
-                if self.untouched_2[neighbor] is None or self.untouched_2[neighbor] > new_distance:
+                if (
+                    self.untouched_2[neighbor] is None
+                    or self.untouched_2[neighbor] > new_distance
+                ):
                     self.untouched_2[neighbor] = new_distance
 
             sorted_nodes_2 = sorted(
-                distances[self.current_node_2].items(), key=lambda x: x[1])
+                distances[self.current_node_2].items(), key=lambda x: x[1]
+            )
             self.touched_2[self.current_node_2] = self.current_distance_2
 
             del self.untouched_2[self.current_node_2]
@@ -137,9 +145,9 @@ class dj_algorithm:
     # including complexities and structures.
     def truck_three(self, list_3):
         for i in range(len(list_3)):
-            delivery_node = list_3[i]['Delivery Node']
+            delivery_node = list_3[i]["Delivery Node"]
             self.untouched_3[delivery_node] = None
-            self.untouched_3['hub'] = 0
+            self.untouched_3["hub"] = 0
 
         while len(self.untouched_3) > 0:
             for neighbor, dist in distances[self.current_node_3].items():
@@ -148,11 +156,15 @@ class dj_algorithm:
 
                 new_distance = self.current_distance_3 + dist
 
-                if self.untouched_3[neighbor] is None or self.untouched_3[neighbor] > new_distance:
+                if (
+                    self.untouched_3[neighbor] is None
+                    or self.untouched_3[neighbor] > new_distance
+                ):
                     self.untouched_3[neighbor] = new_distance
 
             sorted_nodes_3 = sorted(
-                distances[self.current_node_3].items(), key=lambda x: x[1])
+                distances[self.current_node_3].items(), key=lambda x: x[1]
+            )
             self.touched_3[self.current_node_3] = self.current_distance_3
 
             del self.untouched_3[self.current_node_3]
